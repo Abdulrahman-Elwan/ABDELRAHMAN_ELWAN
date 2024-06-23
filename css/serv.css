@@ -1,0 +1,319 @@
+.hero {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../imge/bg-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.skills .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.skills h1 {
+    color: #2ca1b1;
+    margin: 40px 0 !important;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif !important;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+
+.skills .container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif !important;
+    padding: 10px 20px;
+    margin: 10px auto;
+    height: 200px;
+    width: 200px;
+    background: rgba(237, 237, 237, 0.884);
+    backdrop-filter: blur(20px);
+}
+
+.skills .container .card .fa-html5,
+.fa-css3-alt,
+.fa-bootstrap,
+.fa-js,
+.fa-react {
+    font-size: 100px !important;
+}
+
+.fa-html5 {
+    color: #e34c25;
+}
+
+.fa-css3-alt {
+    color: #264de4;
+}
+
+.fa-bootstrap {
+    color: #c900db;
+}
+
+.fa-js {
+    color: #fffb00;
+    background-color: black;
+}
+
+.fa-react {
+    color: #61dbfb;
+}
+
+.skills h4 {
+    color: #010713;
+    text-align: end !important;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif !important;
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+
+/* Experience 
+******************************************************/
+.Experience {
+    width: 100%;
+}
+
+.Experiencediv .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Experiencediv h1 {
+    color: #2ca1b1;
+    margin: 40px 0 20px !important;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif !important;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+
+.Experiencediv p {
+    text-align: center;
+    color: #d2d7e2;
+    margin: 25px auto;
+}
+
+.Experience .accordion {
+    width: 100%;
+    margin: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    font-weight: 500;
+    background-color: #283847;
+    border: none;
+    box-shadow: none;
+    font-family: "Roboto Slab", serif;
+    font-size: 22px;
+}
+
+.Experience .accordion-body {
+    color: #fff;
+    background-color: #283847af;
+    border: none;
+    box-shadow: none;
+    font-family: "Roboto Slab", serif;
+}
+
+.Experience .accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 20px;
+    color: #010713;
+    text-align: left;
+    font-weight: 700;
+    background-color: #ffffff00;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    font-weight: 500;
+    background-color: #283847;
+    border: none;
+    box-shadow: none;
+    font-family: "Oswald", sans-serif !important;
+    font-size: 22px;
+}
+
+.Experience .accordion-body {
+    color: #010713;
+    background-color: #d2d7e2;
+    border: none;
+    box-shadow: none;
+    font-family: "Oswald", sans-serif !important;
+}
+
+@media only screen and (max-width: 750px) {
+    .Experience .row .left {
+        display: none;
+    }
+
+    .Experience .row .left {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .Experience .row {
+        padding: 70px 40px;
+    }
+}
+
+
+/* portfolio 
+******************************************************/
+.portfolio {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.portfoliodiv .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfoliodiv h1 {
+    color: #2ca1b1;
+    margin: 40px 0 20px !important;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif !important;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+.portfolio .part{
+    width: 250px;
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfoliodiv .card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: all 1s ease;
+}
+.portfoliodiv .card img {
+    width: 100%;
+    height: 700px;
+    fill: #333;
+    transition: all 1s ease;
+}
+.portfoliodiv .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.portfoliodiv .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #d2d7e2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 1s ease;
+}
+.portfoliodiv .card:hover .card__content {
+    transform: rotateX(0deg);
+}
+.portfoliodiv .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.portfoliodiv .card:hover img {
+    scale: 0;
+}
+.portfoliodiv .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+    text-align: center;
+}
+.portfolio .fa-eye{
+    font-size: 50px;
+    margin-top: 30px;
+    color: #010713;
+    transition: all 0.7s ease;
+}
+.portfolio .fa-eye:hover{
+    color: #00297a;
+}
+.portfolio h3{
+    color: #f2f2f2;
+    margin: 10px 0 !important;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif !important;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+.portfolio p{
+    color: #d2d7e2;
+    text-align: center;
+    font-size: 17px;
+    display: none;
+    width: 100%;
+    padding: 0 3px;
+}
+.portfolio .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.portfolio span{
+    width: 100%;
+    text-align: center !important;
+    font-size: 18px;
+    color: #2ca1b1;
+    font-weight: bold;
+    transition: all 0.7s ease;
+    margin: 0 auto;
+}
+.portfolio span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #00297a;
+}
